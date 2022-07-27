@@ -1,0 +1,17 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(var(--yellow-first));
+    padding: 0px 1rem;
+    padding-top: 5rem;
+}
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.chield {
+    margin-top: 1rem;
+}
+.chield:last-child {
+    grid-column: 2;
+}

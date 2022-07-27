@@ -13,6 +13,9 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +26,14 @@ a {
     color: white;
     background: black;
   }
+}
+:root {
+  --green-first:76, 98, 88;
+  --yellow-first: 188, 196, 163;
+  --green-second: 130, 159, 147;
+  --green-third:130, 159, 147;
+}
+
+ul {
+  list-style-type: none;
 }
