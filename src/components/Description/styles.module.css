@@ -1,7 +1,7 @@
 .container {
     height: 100vh;
     width: 100%;
-    background: linear-gradient(rgb(var(--yellow-first)) 90%, rgb(var(--green-second))100%);
+    background:rgb(var(--yellow-first));
     position: relative;
     padding: 2rem 10rem;
     font-size: 3.2rem;

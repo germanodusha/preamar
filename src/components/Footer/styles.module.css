@@ -1,0 +1,43 @@
+.container {
+    width: 100%;
+    background: linear-gradient(180deg, rgba(var(--yellow-first), 1) 0%, rgba(var(--green-second), 1) 35%);
+    position: relative;
+    font-size: 0.8rem;
+    padding: 5rem 1rem;
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-weight: 600;
+    color: #3e4744;
+}
+.container ul {
+    display: grid;
+    padding-bottom: 1rem;
+}
+.container h6 {
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.title {
+    padding-bottom: 2rem;
+}
+.sticky {
+    position: sticky;
+    height: 100px;
+    width: 100%;
+    top: 80%;
+}
+.cover {
+    position: relativer;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 15rem;
+}
+.cover div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
