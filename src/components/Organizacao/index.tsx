@@ -6,7 +6,8 @@ const Organization = () =>{
         <div className={styles.container}>
             <div>
                 <ul className={styles.parent}>
-                    <li className={styles.chield}>IDEALIZAÇÃO
+                    <li className={styles.chield}>
+                        <h3>IDEALIZAÇÃO</h3>
                         <ul>
                             <li>SAMANTHA MOREIRA</li>
                             <li>FREDERICO SILVA</li>
@@ -17,7 +18,7 @@ const Organization = () =>{
                         </ul>
                     </li>
                     <li className={styles.chield}>
-                        ORGANIZAÇÃO
+                        <h3>ORGANIZAÇÃO</h3>
                         <ul>
                             <li>SAMANTHA MOREIRA</li>
                             <li>FREDERICO SILVA</li>
@@ -27,7 +28,7 @@ const Organization = () =>{
                         </ul>
                     </li>
                     <li className={styles.chield}>
-                        IDENTIDADE VISUAL
+                        <h3>IDENTIDADE VISUAL</h3>
                         <ul>
                             <li>RAUL LUNA</li>
                         </ul>

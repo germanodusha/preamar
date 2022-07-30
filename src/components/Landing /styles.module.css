@@ -1,8 +1,9 @@
 .container {
     height: 100vh;
     width: 100%;
-    background: linear-gradient(180deg, rgba(var(--green-first)) 85%, rgba(var(--yellow-first)) 100%);
+    background: linear-gradient(180deg, rgba(var(--green-first)) 85%, rgba(var(--yellow-first)) 95%);
     position: relative;
+    color: black;
 }
 .container footer {
     position: absolute;
@@ -33,14 +34,20 @@
     left: 0px;
     right: 100%;
     bottom: 2px;
-    background: white;
+    background: #3e4532;
     border-radius: 2px;
     z-index: -1;
     transition: 0.5s all;
-    box-shadow: 0px 0px 5px 3px white;
+    box-shadow: 0px 0px 5px 3px #3e4532;
     opacity: 0;
 }
 .container footer a:hover::before {
     right: 0%;
     opacity: 1;
+}
+.container a {
+    padding-right: 1rem;
+}
+.container span {
+    position: relative;
 }
