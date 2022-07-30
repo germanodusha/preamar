@@ -1,7 +1,6 @@
 import { Section } from "./src/components/Section";
 
-const firstSection = (
-        <>
+const firstSection = 
             <Section
             title={
             <>
@@ -14,7 +13,7 @@ const firstSection = (
                 SÃO LUIS, 26 ABRIL - 15 MAIO
             </>
             }
-            members={
+            description={
             <>
             CURADORIA:<br/>
             SAMANTHA,SAMANTHA,SAMANTHA,SAMANTHA,SAMANTHA,SAMANTHA,SAMANTHA,
@@ -25,12 +24,11 @@ const firstSection = (
             SAMANTHASAMANTHASAMANTHASAMANTHASAMANTHASAMANTHA
             </> 
             }
-            /> 
-        </>
- )            
+/> 
+  
+             
 
-const secondSection =(
-        <>
+const secondSection =
             <Section
             title={
             <>teste</>
@@ -38,11 +36,10 @@ const secondSection =(
             place={
             <>teste</>
             }
-            members={
+            description={
             <>teste</>
             }
-            /> 
-        </>)
+/> 
              
 
 const final = [firstSection, secondSection]
