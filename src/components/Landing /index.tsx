@@ -6,7 +6,7 @@ const Landing = ()=>{
         <div className={styles.container}>
             <div className={styles.logo}>
                 <div className={styles.imageContainer}>
-                    <Image src="/Preamar_Logo.png" layout="fill" alt='Logo' />
+                    <Image src="/Preamar_Logo.png" objectFit="contain" layout="fill" alt='Logo' />
                 </div>
             </div>
             <footer>

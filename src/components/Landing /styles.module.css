@@ -4,6 +4,7 @@
     background: linear-gradient(180deg, rgba(var(--green-first)) 85%, rgba(var(--yellow-first)) 95%);
     position: relative;
     color: black;
+
 }
 .container footer {
     position: absolute;
@@ -12,6 +13,10 @@
     display: flex;
     justify-content: space-between;
     padding: 0px 1rem;
+    padding-right:0px;
+}
+.container footer h3 {
+    font-weight: 400;
 }
 .container footer a {
     position: relative;
@@ -38,16 +43,18 @@
     border-radius: 2px;
     z-index: -1;
     transition: 0.5s all;
-    box-shadow: 0px 0px 5px 3px #3e4532;
+    box-shadow: 0px 0px 5px 3px #3A5848;
     opacity: 0;
 }
 .container footer a:hover::before {
-    right: 0%;
+    right: 15%;
     opacity: 1;
 }
 .container a {
     padding-right: 1rem;
+    font-size: 1.4rem;
 }
 .container span {
     position: relative;
+    font-size: 1.4rem;
 }

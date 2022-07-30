@@ -6,7 +6,7 @@
     padding: 5rem 1rem;
     padding-top: 1rem   ;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 50%);
     font-weight: 600;
     color: #808C82;
 }
@@ -24,7 +24,7 @@
 }
 .sticky {
     position: sticky;
-    height: 100px;
+    height: 200px;
     width: 100%;
     top: 80%;
 }
@@ -34,7 +34,7 @@
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 15rem;
+    padding-left: 2rem;
 }
 .cover div {
     position: relative;

@@ -28,6 +28,8 @@
     width: 33%;
     height: 100px;
     justify-self: flex-end;
+    display: flex;
+    justify-items: flex-end;
 }
 .container h3 {
     font-weight: 400;
