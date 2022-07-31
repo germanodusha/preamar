@@ -10,7 +10,7 @@ const Landing = ()=>{
                 </div>
             </div>
             <footer>
-                <span>PREAMAR é um projeto de ações contínuas e em rede</span>
+                <span>PREAMAR é um projeto de ações em rede a partir do Maranhão</span>
                 <div>
                     <a href='https://www.instagram.com/preamaremrede'>Instagram</a>
                     <a href='https://www.youtube.com/channel/preamaremrede'>Youtube</a>
