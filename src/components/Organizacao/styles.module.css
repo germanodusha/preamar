@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 1fr;
     background-color: rgb(var(--yellow-first));
     padding: 0px 1rem;
-    padding-top: 5rem;
+    padding-top: 3rem;
     padding-bottom:4rem;
     max-height: 50%;
     color: black;

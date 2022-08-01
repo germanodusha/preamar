@@ -23,13 +23,13 @@ const Slider = () => {
             <div className={styles.gradient}/>
             <div className={`wrapper ${styles.wrapper }`}>
                 <div>
-                    <Image src="/photo-3.jpg" alt="photo" layout="fill" objectFit="cover"/>
+                    <Image src="/caroussel-photos/photo-3.jpg" alt="photo" layout="fill" objectFit="cover"/>
                 </div>
                 <div>
-                    <Image src="/photo-2.jpg" alt="photo" layout="fill" objectFit="cover"/>   
+                    <Image src="/caroussel-photos/photo-2.jpg" alt="photo" layout="fill" objectFit="cover"/>   
                 </div>
                 <div>
-                    <Image src="/photo-1.jpg" alt="photo" layout="fill" objectFit="cover"/>
+                    <Image src="/caroussel-photos/photo-1.jpg" alt="photo" layout="fill" objectFit="cover"/>
                 </div>
             </div>
             <div className={styles.leftArrow} onClick={()=>{handleClick(-1)}}/>

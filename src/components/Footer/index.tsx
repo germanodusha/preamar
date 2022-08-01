@@ -6,6 +6,7 @@ const Footer = () =>{
     return(
         <div className={styles.container}>
             <div className={styles.textContainer}>
+                <h3 className={styles.title}>AÇÕES REALIZADAS</h3>
                 {final.map(
                     section => {
                         console.log(final)

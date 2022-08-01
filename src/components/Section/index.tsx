@@ -26,7 +26,7 @@ export const Section = ({title, place, description}:SectionProps) =>{
                 color:black;
             }
             h3:last-child{
-                margin:3rem 0px;
+                margin:1rem 0px;
             }
             `}</style>
         </div>

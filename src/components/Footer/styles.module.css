@@ -20,21 +20,28 @@
     font-weight: 600;
 }
 .title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+}
+.title {
     padding-bottom: 2rem;
 }
 .sticky {
     position: sticky;
     height: 200px;
-    width: 100%;
+    width: 50%;
     top: 80%;
+    margin-left: auto;
 }
 .cover {
-    position: relativer;
+    position: relative;
     width: 100%;
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding-left: 2rem;
+    right: 1rem;
 }
 .cover div {
     position: relative;

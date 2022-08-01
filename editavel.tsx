@@ -14,36 +14,17 @@ const firstSection =
             </>
             }
             description={
-            <>
-            <u>CURADORIA<u><br/>
-            SAMANTHA MOREIRA, FREDERICO SILVA, YURI LOGRADO, MARCO LIMA<br/>
-            <u>ARTISTAS<u><br/>
-            SILVANA MENDES, GÊ VIANA, TASSILA CUSTODES, MARLENE BARROS,
-            CLÁUDIO COSTA, THIAGO MARTINS DE MELO, MARCIO VASCONCELOS,
-            DINHO ARAÚJO, VICENTE MARTINS, INGRID BARROS, PABLO MONTEIRO,
-            ROMANA MARIA, THIAGO FONSECA, MARCOS FERREIRA, TIETA MACAU, 
-            CERAMISTAS DE ITAMATATUIA, TON BEZERRA, GENILSON GUAJARARA
-            </> 
-            }
-/> 
-  
-             
-
-const secondSection =
-            <Section
-            title={
-            <>PROCESSOS FORMATIVOS ~ CONVERSAS</>
-            }
-            place={
-            <>CHÃO SLZ<br/>
-            SÃO LUIS, 27 DE ABRIL DE 2022
-            </>
-            }
-            description={
-            <>COLABORAÇÕES E COAUTORIAS ENTRE ARTISTAS E CURADORES, COM RAFAEL RG, THIAGO MARTINS DE MELO E GERMANO DUSHÁ</>
-            }
-/> 
-                        
+                <>
+                <u>CURADORIA</u><br/>
+                SAMANTHA MOREIRA, FREDERICO SILVA, YURI LOGRADO, MARCO LIMA<br/>
+                <u>ARTISTAS</u><br/>
+                SILVANA MENDES, GÊ VIANA, TASSILA CUSTODES, MARLENE BARROS,
+                CLÁUDIO COSTA, THIAGO MARTINS DE MELO, MARCIO VASCONCELOS,
+                DINHO ARAÚJO, VICENTE MARTINS, INGRID BARROS, PABLO MONTEIRO,
+                ROMANA MARIA, THIAGO FONSECA, MARCOS FERREIRA, TIETA MACAU, 
+                CERAMISTAS DE ITAMATATUIA, TON BEZERRA, GENILSON GUAJARARA
+                </>
+            }/>            
                         
            const secondSection =
             <Section
@@ -57,8 +38,7 @@ const secondSection =
             }
             description={
             <>CIRCULAÇÃO E MERCADO DE ARTE, COM GERMANO DUSHÁ</>
-            }
-/>   
+            }/>   
 
 const final = [firstSection, secondSection]
 export default final;
