@@ -64,23 +64,3 @@
     background-color: transparent;
     cursor: url('/Left_Arrow.png') 0 0, auto;
 }
-.leftArrow::after {
-    content: "";
-    position: absolute;
-    width: 10%;
-    height: 100%;
-    background-color: red;
-    opacity: 0;
-    transition: all 0.4s ease-in-out;
-}
-/* .leftArrow:hover::after {
-    animation: apper 1s ease-in-out;
-}
-@keyframes apper {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-} */
