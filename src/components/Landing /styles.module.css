@@ -4,7 +4,9 @@
     background: linear-gradient(180deg, rgba(var(--green-first)) 85%, rgba(var(--yellow-first)) 95%);
     position: relative;
     color: black;
-
+    position: sticky;
+    top: 0;
+    z-index:-1;
 }
 .container footer {
     position: absolute;

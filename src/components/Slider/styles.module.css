@@ -2,7 +2,8 @@
     height: 100vh;
     width: 100%;
     overflow-x: auto;
-    position: relative;
+    position: sticky;
+    top: 0;
 
 }
 .wrapper {
@@ -46,7 +47,7 @@
     cursor: pointer;
     transition: all 0.8s ease-in-out;
     background-color: transparent;
-    cursor: url('/right.cur') 0 0 , auto;
+    cursor: url('/Right_Arrow.png') 0 0 , auto;
 }
 .leftArrow {
     position: absolute;
@@ -61,5 +62,25 @@
     cursor: pointer;
     transition: all 0.8s ease-in-out;
     background-color: transparent;
-    cursor: url('/left.cur') 0 0, auto;
+    cursor: url('/Left_Arrow.png') 0 0, auto;
 }
+.leftArrow::after {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    background-color: red;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+/* .leftArrow:hover::after {
+    animation: apper 1s ease-in-out;
+}
+@keyframes apper {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+} */
