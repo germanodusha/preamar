@@ -4,7 +4,6 @@ import styles from "./styles.module.css"
 
 const Slider = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
-
     useEffect(() => {
         const timer = setTimeout(() => {
             handleClick(1);
@@ -12,7 +11,6 @@ const Slider = () => {
     }, [currentSlide]);
 
     function handleClick(direction:number) {
-        console.log(direction, currentSlide)
         if(currentSlide>=0 && currentSlide<2){
             return setCurrentSlide(currentSlide+direction)
         }

@@ -1,7 +1,17 @@
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
+import useScroll from '../../hooks/useScroll';
 import styles from './styles.module.css'
 
 const Landing = ()=>{
+    const scroll = useScroll();
+    const [scrolled, setScrolled] = useState(false);
+    useEffect(()=>{
+        if(scroll > 0 && !scrolled){
+        setScrolled(true);
+        }
+    }, [scroll, scrolled]);
+    
     return(
         <div className={styles.container}>
             <div className={styles.logo}>
@@ -10,10 +20,10 @@ const Landing = ()=>{
                 </div>
             </div>
             <footer>
-                <span>PREAMAR é um projeto de ações em rede a partir do Maranhão</span>
+                <span className={scrolled ?'is-visible':'is-not-visible'}>PREAMAR é um projeto de ações em rede a partir do Maranhão</span>
                 <div>
-                    <a target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/preamaremrede'>Instagram</a>
-                    <a target="_blank" rel="noopener noreferrer" href='https://www.youtube.com/channel/preamaremrede'>Youtube</a>
+                    <a className={scrolled ?'is-visible':'is-not-visible'} target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/preamaremrede'>Instagram</a>
+                    <a className={scrolled ?'is-visible':'is-not-visible'} target="_blank" rel="noopener noreferrer" href='https://www.youtube.com/channel/preamaremrede'>Youtube</a>
                 </div>
             </footer>
         </div>

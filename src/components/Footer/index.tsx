@@ -1,22 +1,33 @@
 import Image from 'next/image';
+import { useEffect, useRef, useState } from 'react';
 import final from '../../../editavel';
+import Scroller from '../Scroller';
 import styles from './styles.module.css';
 
 const Footer = () =>{
+    const containerRef = useRef<HTMLDivElement>();
+    const [parentofsetTop, setoffsetTop] = useState(0)
+    useEffect(
+        ()=>{
+            const {offsetTop} = containerRef.current || {offsetTop:0};
+            setoffsetTop(offsetTop)
+        },[])
     return(
-        <div className={styles.container}>
+        <div ref={containerRef} className={styles.container}>
             <div className={styles.textContainer}>
                 <h3 className={styles.title}>AÇÕES REALIZADAS</h3>
                 {final.map(
-                    section => {
+                    (section, index) => {
                         console.log(final)
                         return(
                             <>
-                                {section}
-                            </>
+                                        <Scroller parentoffset={parentofsetTop * 0.85}>
+                                        {section}
+                                        </Scroller>
+                                </>
                         )
                     }
-                )}
+                    )}
             </div>
             <div>
                 <div className={styles.sticky}>
