@@ -1,9 +1,10 @@
-import { useEffect, useRef, useState } from 'react';
+import { createElement, useEffect, useRef, useState } from 'react';
 import Scroller from '../Scroller'
 import styles from './styles.module.css'
 
 const Description = () =>{
-    const containerRef = useRef<HTMLDivElement>();
+    const div = createElement('div', { className: styles.container }) as unknown as HTMLDivElement;
+    const containerRef = useRef<HTMLDivElement>(div);
     const [parentofsetTop, setoffsetTop] = useState(0)
     useEffect(
         ()=>{

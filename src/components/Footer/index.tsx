@@ -1,11 +1,12 @@
 import Image from 'next/image';
-import { useEffect, useRef, useState } from 'react';
+import { createElement, useEffect, useRef, useState } from 'react';
 import final from '../../../editavel';
 import Scroller from '../Scroller';
 import styles from './styles.module.css';
 
 const Footer = () =>{
-    const containerRef = useRef<HTMLDivElement>();
+    const div = createElement('div', { className: styles.container }) as unknown as HTMLDivElement;
+    const containerRef = useRef<HTMLDivElement>(div);
     const [parentofsetTop, setoffsetTop] = useState(0)
     useEffect(
         ()=>{
