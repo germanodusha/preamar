@@ -10,7 +10,7 @@ const firstSection =
             place={
             <>
                 CHÃO SLZ (@CHAOSLZ)/LIMA GALERIA (@LIMAGALERIA)<br/>
-                SÃO LUIS, 26 ABRIL - 15 MAIO DE 2022
+                SÃO LUIS, 26 ABRIL A 15 MAIO DE 2022
             </>
             }
             description={
@@ -51,7 +51,27 @@ const thirdSection =
             }
             description={
             <>COLABORAÇÕES E COAUTORIAS ENTRE ARTISTAS E CURADORES COM RAFAEL RG, THIAGO MARTINS DE MELO E GERMANO DUSHÁ <br/></>
+            }/>
+
+const fourthSection =
+            <Section
+            title={
+            <>SP-ARTE ROTAS BRASILEIRAS</>
+            }
+            place={
+            <>ARCA<br/>
+            SÃO PAULO, 24 A 28 DE AGOSTO 
+            </>
+            }
+            description={
+             <>
+                <u>ARTISTAS</u><br/>
+            SILVANA MENDES, DINHO ARAÚJO, MARCIO VASCONCELOS
+            <br/>
+                <u>CURADORIA</u><br/>
+                SAMANTHA MOREIRA, FREDERICO SILVA, YURI LOGRADO, MARCO LIMA, GERMANO DUSHÁ
+                </>
             }/>   
       
-const final = [firstSection, secondSection, thirdSection]
+const final = [firstSection, secondSection, thirdSection, fourthSection]
 export default final;
