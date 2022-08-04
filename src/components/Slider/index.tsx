@@ -6,6 +6,9 @@ const Slider = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     function handleClick(direction:number) {
+        if(currentSlide===0 && direction === -1) {
+            return;
+        }
         if(currentSlide>=0 && currentSlide<2){
             return setCurrentSlide(currentSlide+direction)
         }
