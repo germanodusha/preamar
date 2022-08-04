@@ -17,31 +17,33 @@ const Footer = () =>{
         <div ref={containerRef} className={styles.container}>
             <div className={styles.textContainer}>
                 <h3 className={styles.title}>AÇÕES REALIZADAS</h3>
-                {final.map(
-                    (section, index) => {
-                        console.log(final)
-                        return(
-                            <>
-                                        <Scroller parentoffset={parentofsetTop * 0.95}>
-                                        {section}
-                                        </Scroller>
-                                </>
-                        )
-                    }
-                    )}
-            </div>
-            <div>
-                <div className={styles.sticky}>
-                    <div className={styles.cover}>
-                        <div>
-                            <Image src="/Preamar_Logo2.png" objectFit="contain"  alt='image' layout="fill"/>
-                        </div>
-                        <div>
-                            <Image src="/Preamar_Logo2.png" objectFit="contain"  alt='image' layout="fill"/>
-                        </div>
-                        <div>
-                            <Image src="/Preamar_Logo2.png" objectFit="contain" alt='image' layout="fill"/>
-                        </div>
+                <div className={styles.grid}>
+                    <div>
+                        {final.map(
+                            (section, index) => {
+                                console.log(final)
+                                return(
+                                    <>
+                                                <Scroller parentoffset={parentofsetTop * 0.95}>
+                                                {section}
+                                                </Scroller>
+                                        </>
+                                )
+                            }
+                            )}
+                    </div>
+                    <div>
+                            <div className={styles.cover}>
+                                <div>
+                                    <Image src="/Preamar_Logo2.png" objectFit="contain"  alt='image' layout="fill"/>
+                                </div>
+                                <div>
+                                    <Image src="/Preamar_Logo2.png" objectFit="contain"  alt='image' layout="fill"/>
+                                </div>
+                                <div>
+                                    <Image src="/Preamar_Logo2.png" objectFit="contain" alt='image' layout="fill"/>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>

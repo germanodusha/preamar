@@ -25,7 +25,7 @@
     width: 300%;
     transition: all 0.8s ease;
     background-image:linear-gradient(0deg, 
-    rgba(var(--yellow-first),1) 2%, rgba(var(--green-second) , 0.9) 5%, rgba(var(--green-second) , 0.9) 95%, rgba(var(--yellow-first),1) 98% );
+    rgba(var(--yellow-first),1) 0%, rgba(var(--green-second) , 0.9) 10%, rgba(var(--green-second) , 0.9) 90%, rgba(var(--yellow-first),1) 100% );
 }
 .container:hover .gradient{
     transition: all 0.8s ease;

@@ -2,13 +2,12 @@
     width: 100%;
     position: sticky;
     top: 1rem;
-    padding: 1rem 10rem;
+    padding: 7rem 10rem;
     font-size: 2rem;
     color: black;
-    padding-top: 10rem;
     position: sticky;
     z-index: 0;
-    padding-top: 5rem;
+    padding-top: 15rem;
 }
 
 .container::after {
