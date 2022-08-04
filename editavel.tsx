@@ -62,5 +62,5 @@ const thirdSection =
             </>
             }/>   
       
-const final = [firstSection, secondSection]
+const final = [firstSection, secondSection, thirdSection]
 export default final;
