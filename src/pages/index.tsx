@@ -29,10 +29,11 @@ const Home: NextPage = (props:any) => {
 export async function getStaticProps() {
   const postsDirectory = path.join(process.cwd(), 'public/corousel-photos')
   const filenames = await fs.readdir(postsDirectory)
-
+  const testFile = new RegExp(/\.(jpg|jpeg|png|gif)$/i);
+  const filteredFilenames = filenames.filter(fileName => testFile.test(fileName))
   return {
     props: {
-      filenames
+      filenames:filteredFilenames
     },
   }
 }

@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { ReactNode, useCallback, useRef, useState } from "react";
+import { memo, ReactNode, useCallback, useMemo, useRef, useState } from "react";
 import styles from "./styles.module.css";
 interface SliderProps {
     fileNames: string[];
@@ -7,30 +7,27 @@ interface SliderProps {
 
 const Slider = ({fileNames}:SliderProps) => {
     const [currentSlide, setCurrentSlide] = useState(0);
-    const wrapperRef = useRef<HTMLDivElement>(null);
-
     const click = useCallback(function handleClick(direction:number) {
         if(currentSlide===0 && direction === -1) {
             return;
         }
         if(currentSlide>=0 && currentSlide<fileNames.length-1){
-            
             return setCurrentSlide(currentSlide+direction)
         }
         setCurrentSlide(0)
     },[currentSlide, fileNames])
 
-
+    console.log(fileNames)
     return(
         <div className={styles.container}>
             <div className={styles.gradient}/>
-            <div ref={wrapperRef} className={`wrapper ${styles.wrapper }`}>
+            <div className={`wrapper ${styles.wrapper }`}>
                 {fileNames.map((fileName, index) => {
-                    return(
-                        <div key={index} className={styles.cover}>
-                            <Image src={`/corousel-photos/${fileName}`} objectFit="contain" alt='image' layout="fill"/>
-                        </div>
-                    )}
+                        return(
+                            <div key={index} className={styles.cover}>
+                                <Image src={`/corousel-photos/${fileName}`} objectFit="contain" alt='image' layout="fill"/>
+                            </div>
+                        )}
                 )}
             </div>
             <div className={styles.leftArrow} onClick={()=>{click(-1)}}/>
@@ -47,4 +44,4 @@ const Slider = ({fileNames}:SliderProps) => {
         </div>
     )
 }
-export default Slider;
+export default memo(Slider);
