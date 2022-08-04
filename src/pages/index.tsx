@@ -5,11 +5,9 @@ import Description from '../components/Description'
 import Footer from '../components/Footer'
 import Landing from '../components/Landing '
 import Organization from '../components/Organizacao'
-import SecondGradient from '../components/SecondGradient'
 import Slider from '../components/Slider'
 
 const Home: NextPage = () => {
-  const [secondGradientPos, setSecondGradientPos] = useState(0)
   return (
     <div >
       <Head>
@@ -20,8 +18,7 @@ const Home: NextPage = () => {
         <Landing />
         <Organization />
         <Slider />
-        <SecondGradient secondGradientPos={secondGradientPos}/>
-        <Description setSecondGradientPos={setSecondGradientPos}/>
+        <Description/>
         <Footer />
       </main>
     </div>

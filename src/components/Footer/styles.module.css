@@ -1,11 +1,11 @@
 
 .container {
     width: 100%;
-    background: rgba(var(--green-second), 1);
+    background: linear-gradient(rgba(var(--green-second), 0) 0%,rgba(var(--green-second), 1) 10%);
     position: relative;
     font-size: 1rem;
     padding: 5rem 1rem;
-    padding-top: 1rem;
+    padding-top: 5rem;
     display: grid;
     grid-template-columns: repeat(2, 50%);
     font-weight: 600;

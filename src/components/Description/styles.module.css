@@ -1,15 +1,14 @@
 .container {
     width: 100%;
-    background:linear-gradient( 50%, rgba(var(--green-second), 1) 100%);
     background: rgba(var(--yellow-first), 1);
     position: sticky;
-    top: 0;
+    top: 1rem;
     padding: 1rem 10rem;
     font-size: 2rem;
     color: black;
     position: sticky;
-    padding-bottom: 5rem;
-    padding-top: 5rem;
+    padding-bottom: -15rem;
+    padding-top: 1rem;
     z-index: 0;
 }
 
@@ -20,7 +19,11 @@
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: -1;
+    background: rgba(var(--yellow-first), 1);
+    height: 200%;
+
+
 }
 .container p {
     position: sticky;
