@@ -2,14 +2,11 @@
     width: 100%;
     background:linear-gradient( 50%, rgba(var(--green-second), 1) 100%);
     background: rgba(var(--yellow-first), 1);
-    position: sticky;
-    top: 0;
+    position: absolute;
     padding: 1rem 10rem;
     font-size: 2rem;
-    color: black;
-    position: sticky;
+    color: transparent;
     padding-bottom: 5rem;
-    z-index: 0;
 }
 
 .container::after {
@@ -19,7 +16,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 1;
+    background: linear-gradient(rgba(var(--yellow-first), 0) 90%, rgba(var(--green-second), 1) 100%);
+    z-index: 10;
 }
 .container p {
     position: sticky;

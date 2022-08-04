@@ -4,6 +4,7 @@ import Description from '../components/Description'
 import Footer from '../components/Footer'
 import Landing from '../components/Landing '
 import Organization from '../components/Organizacao'
+import SecondGradient from '../components/SecondGradient'
 import Slider from '../components/Slider'
 
 const Home: NextPage = () => {
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
         <Landing />
         <Organization />
         <Slider />
+        <SecondGradient />
         <Description />
         <Footer />
       </main>

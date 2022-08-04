@@ -17,6 +17,7 @@ a {
   margin: 0;
   padding: 0;
   cursor: url('/Preamar_Cursor.cur'), auto;
+  font-weight: 400 !important;
 }
 
 @media (prefers-color-scheme: dark) {

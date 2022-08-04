@@ -22,7 +22,7 @@ const Footer = () =>{
                         console.log(final)
                         return(
                             <>
-                                        <Scroller parentoffset={parentofsetTop * 0.85}>
+                                        <Scroller parentoffset={parentofsetTop * 0.95}>
                                         {section}
                                         </Scroller>
                                 </>

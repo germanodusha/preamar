@@ -16,10 +16,10 @@ const Organization = () =>{
             <div>
                 <ul className={styles.parent}>
                     <li className={styles.chield}>
-                        <Scroller parentoffset={parentofsetTop}>
+                        <Scroller parentoffset={parentofsetTop + 350}>
                             <h3>IDEALIZAÇÃO</h3>
                         </Scroller>
-                        <Scroller parentoffset={parentofsetTop}>
+                        <Scroller parentoffset={parentofsetTop + 350}>
                             <ul>
                                 <li>SAMANTHA MOREIRA</li>
                                 <li>FREDERICO SILVA</li>
@@ -31,10 +31,10 @@ const Organization = () =>{
                         </Scroller>
                     </li>
                     <li className={styles.chield}>
-                        <Scroller parentoffset={parentofsetTop}>
+                        <Scroller parentoffset={parentofsetTop + 350}>
                             <h3>ORGANIZAÇÃO</h3>
                         </Scroller>
-                        <Scroller parentoffset={parentofsetTop}>
+                        <Scroller parentoffset={parentofsetTop + 350}>
                             <ul>
                                 <li>SAMANTHA MOREIRA</li>
                                 <li>FREDERICO SILVA</li>
@@ -45,10 +45,10 @@ const Organization = () =>{
                         </Scroller>
                     </li>
                     <li className={styles.chield}>
-                        <Scroller parentoffset={parentofsetTop}>
+                        <Scroller parentoffset={parentofsetTop + 350}>
                             <h3>IDENTIDADE VISUAL</h3>
                         </Scroller>
-                        <Scroller parentoffset={parentofsetTop}>
+                        <Scroller parentoffset={parentofsetTop + 350}>
                             <ul>
                                 <li>RAUL LUNA</li>
                             </ul>
