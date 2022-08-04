@@ -7,18 +7,19 @@ interface SliderProps {
 
 const Slider = ({fileNames}:SliderProps) => {
     const [currentSlide, setCurrentSlide] = useState(0);
+    const wrapperRef = useRef<HTMLDivElement>(null);
 
     const click = useCallback(function handleClick(direction:number) {
         if(currentSlide===0 && direction === -1) {
             return;
         }
         if(currentSlide>=0 && currentSlide<fileNames.length-1){
+            
             return setCurrentSlide(currentSlide+direction)
         }
         setCurrentSlide(0)
     },[currentSlide, fileNames])
 
-    const wrapperRef = useRef<HTMLDivElement>(null);
 
     return(
         <div className={styles.container}>
