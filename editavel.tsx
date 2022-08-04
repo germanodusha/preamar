@@ -45,12 +45,13 @@ const thirdSection =
             <>CONVERSAS ABERTAS</>
             }
             place={
-            <>CHÃO SLZ (@CHAOSLZ)<br/>
-            SÃO LUIS, 27 DE ABRIL DE 2022
+            <>CHÃO SLZ (@CHAOSLZ)/LIMA GALERIA (@LIMAGALERIA)<br/>
+            SÃO LUIS, 27 E 28 DE ABRIL DE 2022
             </>
             }
             description={
-            <>COLABORAÇÕES E COAUTORIAS ENTRE ARTISTAS E CURADORES COM RAFAEL RG, THIAGO MARTINS DE MELO E GERMANO DUSHÁ <br/></>
+            <>COLABORAÇÕES E COAUTORIAS ENTRE ARTISTAS E CURADORES COM RAFAEL RG, THIAGO MARTINS DE MELO E GERMANO DUSHÁ <br/>
+              CIRCULAÇÃO E MERCADO DE ARTE COM GERMANO DUSHÁ</>
             }/>
 
 const fourthSection =
