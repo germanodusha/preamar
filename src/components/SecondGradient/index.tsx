@@ -2,7 +2,7 @@ import { createElement, useEffect, useRef, useState } from 'react';
 import Scroller from '../Scroller'
 import styles from './styles.module.css'
 
-const SecondGradient = () => {
+const SecondGradient = ({secondGradientPos}:any) => {
     const div = createElement('div', { className: styles.container }) as unknown as HTMLDivElement;
     const containerRef = useRef<HTMLDivElement>(div);
     const [parentofsetTop, setoffsetTop] = useState(0)
@@ -10,6 +10,7 @@ const SecondGradient = () => {
         ()=>{
             const {offsetTop} = containerRef.current || {offsetTop:0};
             setoffsetTop(offsetTop)
+
         },[])
     return(
 
@@ -24,7 +25,7 @@ const SecondGradient = () => {
                 <div className={styles.mask}/>
                 <style jsx>{`
                     .teste {
-                        top:${containerRef.current.offsetTop - containerRef.current.offsetHeight}px;
+                        top:${secondGradientPos}px;
                     }
                 `}</style>
             </div>
