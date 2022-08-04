@@ -50,16 +50,7 @@ const thirdSection =
             </>
             }
             description={
-            <>COLABORAÇÕES E COAUTORIAS ENTRE ARTISTAS E CURADORES COM RAFAEL RG, THIAGO MARTINS DE MELO E GERMANO DUSHÁ <br/>
-            }
-            place={
-            <>LIMA GALERIA (@LIMAGALERIA)<br/>
-            SÃO LUIS, 27 DE ABRIL DE 2022
-            </>
-            }
-            description={
-            <>CIRCULAÇÃO E MERCADO DE ARTE COM GERMANO DUSHÁ<br/>
-            </>
+            <>COLABORAÇÕES E COAUTORIAS ENTRE ARTISTAS E CURADORES COM RAFAEL RG, THIAGO MARTINS DE MELO E GERMANO DUSHÁ <br/></>
             }/>   
       
 const final = [firstSection, secondSection, thirdSection]
