@@ -9,7 +9,7 @@ const firstSection =
             }
             place={
             <>
-                CHÃO SLZ (@chaoslz)/LIMA GALERIA (@limagaleria)<br/>
+                CHÃO SLZ (@CHAOSLZ)/LIMA GALERIA (@LIMAGALERIA)<br/>
                 SÃO LUIS, 26 ABRIL - 15 MAIO DE 2022
             </>
             }
@@ -28,7 +28,7 @@ const secondSection =
             <>PROCESSOS FORMATIVOS</>
             }
             place={
-            <>CASA DO SEREIO (@casadosereio)<br/>
+            <>CASA DO SEREIO (@CASADOSEREIO)<br/>
             ALCÂNTRA, MARÇO E ABRIL DE 2022
             </>
             }
@@ -45,7 +45,7 @@ const thirdSection =
             <>CONVERSAS ABERTAS</>
             }
             place={
-            <>CHÃO SLZ (@chaoslz)<br/>
+            <>CHÃO SLZ (@CHAOSLZ)<br/>
             SÃO LUIS, 27 DE ABRIL DE 2022
             </>
             }
@@ -53,7 +53,7 @@ const thirdSection =
             <>COLABORAÇÕES E COAUTORIAS ENTRE ARTISTAS E CURADORES COM RAFAEL RG, THIAGO MARTINS DE MELO E GERMANO DUSHÁ <br/>
             }
             place={
-            <>LIMA GALERIA (@limagaleria)<br/>
+            <>LIMA GALERIA (@LIMAGALERIA)<br/>
             SÃO LUIS, 27 DE ABRIL DE 2022
             </>
             }
