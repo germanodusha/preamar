@@ -21,13 +21,12 @@ const Footer = () =>{
                     <div>
                         {final.map(
                             (section, index) => {
-                                console.log(final)
                                 return(
-                                    <>
-                                                <Scroller parentoffset={parentofsetTop * 0.95}>
+                                    <div key={index}>
+                                                <Scroller  parentoffset={parentofsetTop * 0.95}>
                                                 {section}
                                                 </Scroller>
-                                        </>
+                                        </div>
                                 )
                             }
                             )}

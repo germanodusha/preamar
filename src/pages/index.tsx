@@ -6,8 +6,10 @@ import Footer from '../components/Footer'
 import Landing from '../components/Landing '
 import Organization from '../components/Organizacao'
 import Slider from '../components/Slider'
+import { promises as fs } from 'fs'
+import path from 'path'
 
-const Home: NextPage = () => {
+const Home: NextPage = (props:any) => {
   return (
     <div >
       <Head>
@@ -17,12 +19,21 @@ const Home: NextPage = () => {
       <main>
         <Landing />
         <Organization />
-        <Slider />
+        <Slider fileNames={props.filenames}/>
         <Description/>
         <Footer />
       </main>
     </div>
   )
 }
+export async function getStaticProps() {
+  const postsDirectory = path.join(process.cwd(), 'public/corousel-photos')
+  const filenames = await fs.readdir(postsDirectory)
 
+  return {
+    props: {
+      filenames
+    },
+  }
+}
 export default Home

@@ -1,42 +1,49 @@
 import Image from "next/image"
-import { useEffect, useState } from "react";
-import styles from "./styles.module.css"
+import { ReactNode, useCallback, useRef, useState } from "react";
+import styles from "./styles.module.css";
+interface SliderProps {
+    fileNames: string[];
+}
 
-const Slider = () => {
+const Slider = ({fileNames}:SliderProps) => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
-    function handleClick(direction:number) {
+    const click = useCallback(function handleClick(direction:number) {
         if(currentSlide===0 && direction === -1) {
             return;
         }
-        if(currentSlide>=0 && currentSlide<2){
+        if(currentSlide>=0 && currentSlide<fileNames.length-1){
             return setCurrentSlide(currentSlide+direction)
         }
         setCurrentSlide(0)
-    }
+    },[currentSlide, fileNames])
+
+    const wrapperRef = useRef<HTMLDivElement>(null);
+
     return(
         <div className={styles.container}>
             <div className={styles.gradient}/>
-            <div className={`wrapper ${styles.wrapper }`}>
-                <div>
-                    <Image src="/caroussel-photos/photo-1.jpg" alt="photo" layout="fill" objectFit="cover"/>
-                </div>
-                <div>
-                    <Image src="/caroussel-photos/photo-2.jpg" alt="photo" layout="fill" objectFit="cover"/>   
-                </div>
-                <div>
-                    <Image src="/caroussel-photos/photo-3.jpg" alt="photo" layout="fill" objectFit="cover"/>
-                </div>
+            <div ref={wrapperRef} className={`wrapper ${styles.wrapper }`}>
+                {fileNames.map((fileName, index) => {
+                    return(
+                        <div key={index} className={styles.cover}>
+                            <Image src={`/corousel-photos/${fileName}`} objectFit="contain" alt='image' layout="fill"/>
+                        </div>
+                    )}
+                )}
             </div>
-            <div className={styles.leftArrow} onClick={()=>{handleClick(-1)}}/>
-            <div className={styles.rightArrow} onClick={()=>{handleClick(1)}}/>
+            <div className={styles.leftArrow} onClick={()=>{click(-1)}}/>
+            <div className={styles.rightArrow} onClick={()=>{click(1)}}/>
             <style jsx>{`
             .wrapper {
                 transform: translateX(${currentSlide * -100}%);
                 transition: all 0.8s ease-in-out;
+                height: 100%;
+                display: grid;
+                grid-template-columns: repeat(${fileNames.length}, 100%);
             }
             `}</style>
         </div>
     )
 }
-export default Slider
+export default Slider;
