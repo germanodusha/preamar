@@ -3,6 +3,7 @@ import { createElement, useEffect, useRef, useState } from 'react';
 import final from '../../../editavel';
 import Scroller from '../Scroller';
 import styles from './styles.module.css';
+import Logo from "../../../public/Preamar_Logo2.png"
 
 const Footer = () =>{
     const div = createElement('div', { className: styles.container }) as unknown as HTMLDivElement;
@@ -15,7 +16,6 @@ const Footer = () =>{
         },[])
     return(
         <div ref={containerRef} className={styles.container}>
-            <div className={styles.textContainer}>
                 <h3 className={styles.title}>AÇÕES REALIZADAS</h3>
                 <div className={styles.grid}>
                     <div>
@@ -33,19 +33,18 @@ const Footer = () =>{
                     </div>
                     <div>
                             <div className={styles.cover}>
-                                <div>
-                                    <Image src="/Preamar_Logo2.png" objectFit="contain"  alt='image' layout="fill"/>
-                                </div>
-                                <div>
-                                    <Image src="/Preamar_Logo2.png" objectFit="contain"  alt='image' layout="fill"/>
-                                </div>
-                                <div>
-                                    <Image src="/Preamar_Logo2.png" objectFit="contain" alt='image' layout="fill"/>
-                                </div>
+                                
+                                    <img src="/Preamar_Logo2.png" />
+                                
+                                
+                                    <img src="/Preamar_Logo2.png"/>
+                                
+                                
+                                    <img src="/Preamar_Logo2.png" />
+                                
                             </div>
                     </div>
                 </div>
-            </div>
         </div>
     )
 }

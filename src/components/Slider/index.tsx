@@ -25,7 +25,7 @@ const Slider = ({fileNames}:SliderProps) => {
                 {fileNames.map((fileName, index) => {
                         return(
                             <div key={index} className={styles.cover}>
-                                <Image src={`/corousel-photos/${fileName}`} objectFit="contain" alt='image' layout="fill"/>
+                                <Image src={`/corousel-photos/${fileName}`} objectFit="cover" alt='image' layout="fill"/>
                             </div>
                         )}
                 )}

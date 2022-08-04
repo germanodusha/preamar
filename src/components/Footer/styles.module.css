@@ -9,9 +9,6 @@
     font-weight: 600;
     color: #808C82;
 }
-.textContainer {
-    width: 100%;
-}
 .container ul {
     display: grid;
     padding-bottom: 1rem;
@@ -30,22 +27,18 @@
     padding-bottom: 2rem;
 }
 .cover {
-    position: relative;
     width: 50%;
-    height: 70px;
     display: grid;
-    padding-left: 2rem;
-    right: 1rem;
     top: 0;
     margin-left: auto;
-    display: flex;
-    align-items: flex-start;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-right: -1rem;
 }
-.cover div {
-    position: relative;
+.cover img{
     width: 100%;
-    height: 100%;
-    display: flex;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin: 0;
 }
 .grid {
     position: relative;
