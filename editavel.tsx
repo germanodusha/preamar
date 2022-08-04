@@ -9,36 +9,58 @@ const firstSection =
             }
             place={
             <>
-                CHÃO SLZ/LIMA GALERIA<br/>
+                CHÃO SLZ (@chaoslz)/LIMA GALERIA (@limagaleria)<br/>
                 SÃO LUIS, 26 ABRIL - 15 MAIO DE 2022
             </>
             }
             description={
                 <>
-                <u>CURADORIA</u><br/>
-                SAMANTHA MOREIRA, FREDERICO SILVA, YURI LOGRADO, MARCO LIMA<br/>
                 <u>ARTISTAS</u><br/>
-                SILVANA MENDES, GÊ VIANA, TASSILA CUSTODES, MARLENE BARROS,
-                CLÁUDIO COSTA, THIAGO MARTINS DE MELO, MARCIO VASCONCELOS,
-                DINHO ARAÚJO, VICENTE MARTINS, INGRID BARROS, PABLO MONTEIRO,
-                ROMANA MARIA, THIAGO FONSECA, MARCOS FERREIRA, TIETA MACAU, 
-                CERAMISTAS DE ITAMATATUIA, TON BEZERRA, GENILSON GUAJARARA
+CERAMISTAS DE ITAMATATIUA, CLÁUDIO COSTA, DINHO ARAÚJO, GÊ VIANA, GENILSON GUAJAJARA, INGRID BARROS, MÁRCIO VASCONCELOS, MARCOS FERREIRA, MARLENE BARROS, PABLO MONTEIRO, ROMANA MARIA, SILVANA MENDES, THIAGO FONSECA, THIAGO MARTINS DE MELO, TASSILA CUSTODES, TIETA MACAU, TON BEZERRA, VICENTE MARTINS JR.<br/>
+                <u>CURADORIA</u><br/>
+                SAMANTHA MOREIRA, FREDERICO SILVA, YURI LOGRADO, MARCO LIMA
                 </>
             }/>            
                         
-           const secondSection =
+const secondSection =
             <Section
             title={
-            <>PROCESSOS FORMATIVOS ~ CONVERSAS</>
+            <>PROCESSOS FORMATIVOS</>
             }
             place={
-            <>LIMA GALERIA<br/>
-            SÃO LUIS, 28 DE ABRIL DE 2022 
+            <>CASA DO SEREIO (@casadosereio)<br/>
+            ALCÂNTRA, MARÇO E ABRIL DE 2022
             </>
             }
             description={
-            <>CIRCULAÇÃO E MERCADO DE ARTE, COM GERMANO DUSHÁ</>
+            <>RESIDÊNCIA 1: SILVANA MENDES E TASSILA CUSTODES<br/>
+            RESIDÊNCIA 2: MARCOS FERREIRA<br/>
+            RESIDÊNCIA 3: THIAGO MARTINS DE MELO E GERMANO DUSHÁ
+            </>
             }/>   
 
+const thirdSection =
+            <Section
+            title={
+            <>CONVERSAS ABERTAS</>
+            }
+            place={
+            <>CHÃO SLZ (@chaoslz)<br/>
+            SÃO LUIS, 27 DE ABRIL DE 2022
+            </>
+            }
+            description={
+            <>COLABORAÇÕES E COAUTORIAS ENTRE ARTISTAS E CURADORES COM RAFAEL RG, THIAGO MARTINS DE MELO E GERMANO DUSHÁ <br/>
+            }
+            place={
+            <>LIMA GALERIA (@limagaleria)<br/>
+            SÃO LUIS, 27 DE ABRIL DE 2022
+            </>
+            }
+            description={
+            <>CIRCULAÇÃO E MERCADO DE ARTE COM GERMANO DUSHÁ<br/>
+            </>
+            }/>   
+      
 const final = [firstSection, secondSection]
 export default final;
