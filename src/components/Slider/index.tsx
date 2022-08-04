@@ -21,7 +21,7 @@ const Slider = ({fileNames}:SliderProps) => {
     return(
         <div className={styles.container}>
             <div className={styles.gradient}/>
-            <div className={`wrapper ${styles.wrapper }`}>
+            <div className={`wrapper`}>
                 {fileNames.map((fileName, index) => {
                         return(
                             <div key={index} className={styles.cover}>
