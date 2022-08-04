@@ -40,3 +40,20 @@
     font-weight: 400;
     padding-bottom: 1rem;
 }
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        justify-items: space-between;
+    }
+    .coverContainer {
+        justify-self: center;
+    }
+    .chield:nth-child(2) {
+        text-align: right;
+    }
+    .chield:nth-child(3) {
+        grid-column:span 2;
+        text-align: center;
+    }
+}
+    

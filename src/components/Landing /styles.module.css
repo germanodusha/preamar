@@ -69,3 +69,20 @@
     position: relative;
     font-size: 1.4rem;
 }
+@media (max-width:768px) {
+    .container {
+        height: 110vh;
+    }
+    .container footer {
+        display: grid;
+        padding-right: 1rem;
+        gap: 1rem;
+    }
+    .container footer a:last-child {
+        margin-left: auto;
+    }
+    .linkContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
