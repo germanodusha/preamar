@@ -16,9 +16,14 @@ const firstSection =
             description={
                 <>
                 <u>ARTISTAS</u><br/>
-CERAMISTAS DE ITAMATATIUA, CLÁUDIO COSTA, DINHO ARAÚJO, GÊ VIANA, GENILSON GUAJAJARA, INGRID BARROS, MÁRCIO VASCONCELOS, MARCOS FERREIRA, MARLENE BARROS, PABLO MONTEIRO, ROMANA MARIA, SILVANA MENDES, THIAGO FONSECA, THIAGO MARTINS DE MELO, TASSILA CUSTODES, TIETA MACAU, TON BEZERRA, VICENTE MARTINS JR.<br/>
+                CERAMISTAS DE ITAMATATIUA, CLÁUDIO COSTA, DINHO ARAÚJO, GÊ VIANA, GENILSON GUAJAJARA, INGRID BARROS, MÁRCIO VASCONCELOS, MARCOS FERREIRA, MARLENE BARROS, PABLO MONTEIRO, ROMANA MARIA, SILVANA MENDES, THIAGO FONSECA, THIAGO MARTINS DE MELO, TASSILA CUSTODES, TIETA MACAU, TON BEZERRA, VICENTE MARTINS JR.<br/>
                 <u>CURADORIA</u><br/>
                 SAMANTHA MOREIRA, FREDERICO SILVA, YURI LOGRADO, MARCO LIMA
+                 <u>REALIZAÇÃO<u/><br/>
+                CHÃO SLZ, LIMA GALERIA, CASA DO SEREIO
+                <u>PARCERIA<u/><br/>
+                DEPARTAMENTO DE ARTES VISUAIS DA UNIVERSIDADE FEDERAL DO MARANHÃO - UFMA
+
                 </>
             }/>            
                         
@@ -33,9 +38,12 @@ const secondSection =
             </>
             }
             description={
-            <>RESIDÊNCIA 1: SILVANA MENDES E TASSILA CUSTODES<br/>
-            RESIDÊNCIA 2: MARCOS FERREIRA<br/>
-            RESIDÊNCIA 3: THIAGO MARTINS DE MELO E GERMANO DUSHÁ
+            <><u>RESIDÊNCIA 1<u/>
+            SILVANA MENDES E TASSILA CUSTODES<br/>
+            <u>RESIDÊNCIA 2<u/>
+            MARCOS FERREIRA<br/>
+            <u>RESIDÊNCIA 3<u/>
+            THIAGO MARTINS DE MELO E GERMANO DUSHÁ
             </>
             }/>   
 
@@ -50,8 +58,8 @@ const thirdSection =
             </>
             }
             description={
-            <>COLABORAÇÕES E COAUTORIAS ENTRE ARTISTAS E CURADORES COM RAFAEL RG, THIAGO MARTINS DE MELO E GERMANO DUSHÁ <br/>
-              CIRCULAÇÃO E MERCADO DE ARTE COM GERMANO DUSHÁ</>
+            <><u>COLABORAÇÕES E COAUTORIAS ENTRE ARTISTAS E CURADORES<u/> COM RAFAEL RG, THIAGO MARTINS DE MELO E GERMANO DUSHÁ <br/>
+              <u>CIRCULAÇÃO E MERCADO DE ARTE<u/> COM GERMANO DUSHÁ</>
             }/>
 
 const fourthSection =
