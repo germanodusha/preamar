@@ -1,9 +1,11 @@
 import { createElement, useEffect, useRef, useState } from 'react';
+import useWindowDimensions from '../../hooks/useWindowDimension';
 import Scroller from '../Scroller'
 import styles from './styles.module.css'
 
 const Description = () =>{
     const div = createElement('div', { className: styles.container }) as unknown as HTMLDivElement;
+    const {height} = useWindowDimensions()
     const containerRef = useRef<HTMLDivElement>(div);
     const [parentofsetTop, setoffsetTop] = useState(0)
     useEffect(
@@ -11,8 +13,9 @@ const Description = () =>{
             const {offsetTop} = containerRef.current || {offsetTop:0};
             setoffsetTop(offsetTop)
         },[])
+    const stickyPos = Math.abs(containerRef.current.offsetHeight - height)
     return(
-            <div ref={containerRef} className={styles.container}>
+            <div ref={containerRef} className={`${styles.container} + sticky`}>
             <Scroller parentoffset={parentofsetTop}>
                 <div className={styles.wrapper}>
                     <p>
@@ -21,6 +24,14 @@ const Description = () =>{
                 </div>
             </Scroller>
             <div className={styles.mask}/>
+            <style jsx>{`
+            .sticky {
+                position: -webkit-sticky;
+                position: sticky;
+                top:-${stickyPos}px;
+            }
+            `}
+            </style>
         </div>
     )
 }
