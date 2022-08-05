@@ -24,7 +24,9 @@ a {
   background: rgba(var(--green-first), 1);
   color: white;
 }
+main {
 
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

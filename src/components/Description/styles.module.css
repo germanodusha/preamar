@@ -6,6 +6,7 @@
     color: black;
     z-index: 0;
     padding-bottom: 2rem;
+    top: -10%;
 }
 
 .container::after {
@@ -24,8 +25,11 @@
 }
 @media screen and (max-width: 768px) {
     .container {
-        padding: 10rem 5rem;
+        padding: 10rem 1rem;
         text-align: center;
+        font-size: 1.5rem;
+        padding-bottom:0;
+        top: -20%;
     }
 }
     
