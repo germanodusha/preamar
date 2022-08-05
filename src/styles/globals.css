@@ -18,6 +18,11 @@ a {
   padding: 0;
   cursor: url('/Preamar_Cursor.cur'), auto;
   font-weight: 400 !important;
+
+}
+*::selection{
+  background: rgba(var(--green-first), 1);
+  color: white;
 }
 
 @media (prefers-color-scheme: dark) {
