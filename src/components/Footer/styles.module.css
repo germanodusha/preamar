@@ -1,11 +1,11 @@
 
 .container {
     width: 100%;
-    background: linear-gradient(rgba(var(--yellow-first), 0) 0%,rgba(var(--green-second), 1) 20%);
+    background: linear-gradient(rgba(var(--yellow-first), 0) 0%,rgba(var(--green-second), 1) 10rem);
     position: relative;
     font-size: 1rem;
     padding: 5rem 1rem;
-    padding-top: 10rem;
+    padding-top: 15rem;
     font-weight: 600;
     color: #808C82;
 }
@@ -62,7 +62,7 @@
     }
     .container {
         background: linear-gradient(rgba(var(--yellow-first), 0) 0%,rgba(var(--green-second), 1) 6rem);
-        padding-top: 7.7rem;
+        padding-top: 8.5rem;
     }
 }
     

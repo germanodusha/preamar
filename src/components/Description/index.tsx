@@ -29,7 +29,7 @@ const Description = () =>{
             .sticky {
                 position: -webkit-sticky;
                 position: sticky;
-                top:-${stickyPos<0? 0:stickyPos}px;
+                top:-${stickyPos<0? "":stickyPos}px;
             }
             `}
             </style>
