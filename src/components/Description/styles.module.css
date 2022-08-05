@@ -7,7 +7,6 @@
     z-index: 0;
     padding-bottom: 2rem;
     top: 0 ;
-
 }
 
 .container::after {
@@ -32,7 +31,7 @@
         text-align: center;
         font-size: 1.5rem;
         padding-bottom:0;
-        top: -50rem;
+        position: relative;
     }
 }
     

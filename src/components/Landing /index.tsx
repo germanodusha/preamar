@@ -19,7 +19,6 @@ const Landing = ()=>{
                     <Image src="/Preamar_Logo.png" objectFit="contain" layout="fill" alt='Logo' />
                 </div>
             </div>
-            <div className={styles.spacer}/>
             <footer>
                 <span className={scrolled ?'is-visible':'is-not-visible'}>PREAMAR é um projeto de ações em rede a partir do Maranhão</span>
                 <div className={styles.linkContainer}>

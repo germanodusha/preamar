@@ -1,10 +1,21 @@
 .container {
     width: 100%;
-    background: linear-gradient(180deg, rgba(var(--green-first)) 85%, rgba(var(--yellow-first)) 95%);
+    background: linear-gradient(180deg, rgba(var(--green-first), 1) 85%, rgba(var(--yellow-first), 1) 95%);
     position: relative;
     color: black;
     z-index:0;
     height: 100vh;
+}
+.container::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(var(--yellow-first), 0) 85%, rgba(var(--yellow-first), 1) 95%);
+    min-height: 100%;
 }
 .container footer {
     width: 100%;
@@ -12,17 +23,14 @@
     justify-content: space-between;
     padding: 0px 1rem;
     padding-right:0px;
-    min-height: 15vh;
     position: absolute;
-    top: 85%;
-    bottom: 0;
+    bottom: 5%;
     z-index: 0;
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(180deg, transparent 1%, rgba(var(--yellow-first)) 55%);
-
     align-items: center;
     padding-top: 3rem;
+    z-index: 100;
 }
 .container footer h3 {
     font-weight: 400;
@@ -38,6 +46,7 @@
     position: fixed;
     z-index: -1;
     width: 100%;
+
 }
 .imageContainer{
     position: relative;
@@ -72,24 +81,31 @@
     font-size: 1.4rem;
 }
 @media (max-width:768px) {
+    .container::after{
+        display: none;
+    }
     .container {
-        min-height: 1100px;
-        height: 100%;
+        height: auto;
     }
     .imageContainer {
         height: 100vh;
     }
     .logo {
+        background-color: rgba(var(--green-first), 1);
         height: 100vh;
     }
     .spacer {
         height: 100vh;
     }
     .container footer {
-        position: static;
+        padding-top: 100vh;
+        position: relative;
         display: grid;
         padding-right: 1rem;
         gap: 1rem;
+        z-index: 1;
+        overflow: hidden;
+        background: linear-gradient(rgba(var(--green-first), 0) 80%, rgba(var(--yellow-first), 1) 100%);
     }
     .container footer a:last-child {
         margin-left: auto;
