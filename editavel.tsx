@@ -19,11 +19,10 @@ const firstSection =
                 CERAMISTAS DE ITAMATATIUA, CLÁUDIO COSTA, DINHO ARAÚJO, GÊ VIANA, GENILSON GUAJAJARA, INGRID BARROS, MÁRCIO VASCONCELOS, MARCOS FERREIRA, MARLENE BARROS, PABLO MONTEIRO, ROMANA MARIA, SILVANA MENDES, THIAGO FONSECA, THIAGO MARTINS DE MELO, TASSILA CUSTODES, TIETA MACAU, TON BEZERRA, VICENTE MARTINS JR.<br/>
                 <u>CURADORIA</u><br/>
                 SAMANTHA MOREIRA, FREDERICO SILVA, YURI LOGRADO, MARCO LIMA
-                 <u>REALIZAÇÃO<u/><br/>
+                <u>REALIZAÇÃO</u><br/>
                 CHÃO SLZ, LIMA GALERIA, CASA DO SEREIO
-                <u>PARCERIA<u/><br/>
+                <u>PARCERIA</u><br/>
                 DEPARTAMENTO DE ARTES VISUAIS DA UNIVERSIDADE FEDERAL DO MARANHÃO - UFMA
-
                 </>
             }/>            
                         
