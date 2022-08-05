@@ -24,8 +24,8 @@ a {
   background: rgba(var(--green-first), 1);
   color: white;
 }
-main {
-
+.description-container{
+  position:relative;
 }
 @media (prefers-color-scheme: dark) {
   html {

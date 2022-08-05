@@ -5,8 +5,14 @@ interface SliderProps {
     fileNames: string[];
 }
 
+interface ModalProps {
+    imgUrl: ReactNode;
+    isOpen: boolean;
+}
+
 const Slider = ({fileNames}:SliderProps) => {
     const [currentSlide, setCurrentSlide] = useState(0);
+    const [modal, setModal] = useState<ModalProps>({imgUrl: "/corousel-photos/Chao1.jpg", isOpen: false});
     const click = useCallback(function handleClick(direction:number) {
         if(currentSlide===0 && direction === -1) {
             return;
@@ -17,14 +23,13 @@ const Slider = ({fileNames}:SliderProps) => {
         setCurrentSlide(0)
     },[currentSlide, fileNames])
 
-    console.log(fileNames)
     return(
-        <div className={styles.container}>
+        <div className={`${styles.container} containerModal`}>
             <div className={styles.gradient}/>
             <div className={`wrapper`}>
                 {fileNames.map((fileName, index) => {
                         return(
-                            <div key={index} className={styles.cover}>
+                            <div onClick={()=>{setModal({imgUrl:`/corousel-photos/${fileName}`, isOpen:true})}} key={index} className={styles.cover}>
                                 <Image src={`/corousel-photos/${fileName}`} objectFit="cover" alt='image' layout="fill"/>
                             </div>
                         )}
