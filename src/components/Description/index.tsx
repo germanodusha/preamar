@@ -14,6 +14,7 @@ const Description = () =>{
             setoffsetTop(offsetTop)
         },[])
     const stickyPos = containerRef.current.offsetHeight - height;
+    console.log(stickyPos<0? 0:stickyPos)
     return(
             <div ref={containerRef} className={`${styles.container} + sticky`}>
             <Scroller parentoffset={parentofsetTop}>
@@ -28,7 +29,7 @@ const Description = () =>{
             .sticky {
                 position: -webkit-sticky;
                 position: sticky;
-                top:-${stickyPos<0? stickyPos:0}px;
+                top:-${stickyPos<0? 0:stickyPos}px;
             }
             `}
             </style>
