@@ -37,11 +37,11 @@ const secondSection =
             </>
             }
             description={
-            <><u>RESIDÊNCIA 1<u/>
+            <><u>RESIDÊNCIA 1</u>
             SILVANA MENDES E TASSILA CUSTODES<br/>
-            <u>RESIDÊNCIA 2<u/>
+            <u>RESIDÊNCIA 2</u>
             MARCOS FERREIRA<br/>
-            <u>RESIDÊNCIA 3<u/>
+            <u>RESIDÊNCIA 3</u>
             THIAGO MARTINS DE MELO E GERMANO DUSHÁ
             </>
             }/>   
@@ -57,8 +57,10 @@ const thirdSection =
             </>
             }
             description={
-            <><u>COLABORAÇÕES E COAUTORIAS ENTRE ARTISTAS E CURADORES<u/> COM RAFAEL RG, THIAGO MARTINS DE MELO E GERMANO DUSHÁ <br/>
-              <u>CIRCULAÇÃO E MERCADO DE ARTE<u/> COM GERMANO DUSHÁ</>
+                <>
+                    <u>COLABORAÇÕES E COAUTORIAS ENTRE ARTISTAS E CURADORES</u> COM RAFAEL RG, THIAGO MARTINS DE MELO E GERMANO DUSHÁ <br/>
+                    <u>CIRCULAÇÃO E MERCADO DE ARTE</u> COM GERMANO DUSHÁ
+                </>
             }/>
 
 const fourthSection =
