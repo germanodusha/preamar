@@ -37,11 +37,11 @@ const secondSection =
             </>
             }
             description={
-            <><u>RESIDÊNCIA 1</u>
+            <><u>RESIDÊNCIA 1</u><br/>
             SILVANA MENDES E TASSILA CUSTODES<br/>
-            <u>RESIDÊNCIA 2</u>
+            <u>RESIDÊNCIA 2</u><br/>
             MARCOS FERREIRA<br/>
-            <u>RESIDÊNCIA 3</u>
+            <u>RESIDÊNCIA 3</u><br/>
             THIAGO MARTINS DE MELO E GERMANO DUSHÁ
             </>
             }/>   
