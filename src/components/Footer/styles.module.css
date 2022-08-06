@@ -65,4 +65,9 @@
         padding-top: 8.5rem;
     }
 }
+@media screen and (min-width: 768px) {
+    .infoGrid{
+        width: 66%;
+    }
+}
     

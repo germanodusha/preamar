@@ -51,7 +51,7 @@ ul {
 .is-visible {
   transform: translateY(0%);
   opacity: 1;
-  transition: all 0.5s ease-in-out;
+  transition: all 1.3s ease-in-out;
 }
 .is-not-visible {
   transform: translateY(20%);

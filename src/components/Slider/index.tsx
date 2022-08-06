@@ -40,7 +40,7 @@ const Slider = ({fileNames}:SliderProps) => {
             <style jsx>{`
             .wrapper {
                 transform: translateX(${currentSlide * -100}%);
-                transition: all 0.8s ease-in-out;
+                transition: all 2s ease-in-out;
                 height: 100%;
                 display: grid;
                 grid-template-columns: repeat(${fileNames.length}, 100%);

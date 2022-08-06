@@ -16,7 +16,7 @@ const MyDocument = () =>{
         <link rel="favicon-16x16" sizes="16x16" href="/favicon/favicon-16x16.png"/>
         <link rel="favicon-32x32" sizes="32x32" href="/favicon/favicon-32x32.png"/>
 
-        <title>PREAMAR</title>
+        
         <meta name="title" content="PREAMAR"/>
         <meta name="description" content="PREAMAR é um projeto de ações artísticas em rede a partir do Maranhão."/>
         <meta name="keywords" content=" preamar, arte, maranhão, são luis, alcântra, projetos, artísticos, chão slz, lima galeria, centro histórico, maranhão, artistas, obras, contemporânea"/>

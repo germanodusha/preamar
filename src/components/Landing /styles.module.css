@@ -37,7 +37,7 @@
 }
 .container footer a {
     position: relative;
-    transition: all 0.8s ease-in-out;
+    transition: all 2s ease-in-out;
     pointer-events: all;
 }
 .logo {

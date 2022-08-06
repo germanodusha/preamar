@@ -18,15 +18,15 @@ const Footer = () =>{
         <div ref={containerRef} className={styles.container}>
                 <h3 className={styles.title}>AÇÕES REALIZADAS</h3>
                 <div className={styles.grid}>
-                    <div>
+                    <div className={styles.infoGrid}>
                         {final.map(
                             (section, index) => {
                                 return(
                                     <div key={index}>
-                                                <Scroller  parentoffset={parentofsetTop * 0.95}>
-                                                {section}
-                                                </Scroller>
-                                        </div>
+                                        <Scroller  parentoffset={parentofsetTop * 1.05}>
+                                            {section}
+                                        </Scroller>
+                                    </div>
                                 )
                             }
                             )}
