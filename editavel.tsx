@@ -85,7 +85,7 @@ const fourthSection =
             <><div>ARCA<br/>
             </div>
             SÃO PAULO<br/>
-            24-28/AGO 
+            24-28.AGO/2022 
             </>
             }
             description={
