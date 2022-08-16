@@ -16,7 +16,7 @@ const Footer = () =>{
         },[])
     return(
         <div ref={containerRef} className={styles.container}>
-                <h3 className={styles.title}>AÇÕES REALIZADAS</h3>
+                <h3 className={styles.title}>AÇÕES REALIZADAS E FUTURAS</h3>
                 <div className={styles.grid}>
                     {final.map(
                         (section, index) => {
