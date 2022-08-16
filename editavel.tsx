@@ -9,8 +9,9 @@ const firstSection =
             }
             place={
             <>
-                CHÃO SLZ<br/>
+                <div>CHÃO SLZ<br/>
                 LIMA GALERIA<br/>
+                </div>
                 SÃO LUIS<br/>
                 26.ABR-15.MAI/2022
             </>
@@ -34,7 +35,9 @@ const secondSection =
             <><u>PROCESSOS FORMATIVOS</u></>
             }
             place={
-            <>CASA DO SEREIO<br/>
+            <>
+            <div>CASA DO SEREIO<br/>
+            </div>
             ALCÂNTRA<br/>
             MAR-ABR/2022
             </>
@@ -66,8 +69,10 @@ const thirdSection =
             }
             description={
                 <>
-                    <i>COLABORAÇÕES E COAUTORIAS ENTRE ARTISTAS E CURADORES</i> COM RAFAEL RG, THIAGO MARTINS DE MELO E GERMANO DUSHÁ <br/>
-                    <i>CIRCULAÇÃO E MERCADO DE ARTE</i> COM GERMANO DUSHÁ
+                    <i>COLABORAÇÕES E COAUTORIAS ENTRE ARTISTAS E CURADORES</i><br/>
+                    COM RAFAEL RG, THIAGO MARTINS DE MELO E GERMANO DUSHÁ <br/>
+                    <i>CIRCULAÇÃO E MERCADO DE ARTE</i><br/>
+                    COM GERMANO DUSHÁ
                 </>
             }/>
 
@@ -77,7 +82,8 @@ const fourthSection =
             <><u>SP-ARTE ROTAS BRASILEIRAS</u></>
             }
             place={
-            <>ARCA<br/>
+            <><div>ARCA<br/>
+            </div>
             SÃO PAULO<br/>
             24-28/AGO 
             </>
