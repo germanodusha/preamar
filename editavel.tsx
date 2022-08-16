@@ -4,7 +4,7 @@ const firstSection =
             <Section
             title={
             <>
-                EXPOSIÇÃO PREAMAR
+                <u>EXPOSIÇÃO PREAMAR</u>
             </>
             }
             place={
@@ -31,7 +31,7 @@ const firstSection =
 const secondSection =
             <Section
             title={
-            <>PROCESSOS FORMATIVOS</>
+            <><u>PROCESSOS FORMATIVOS</u></>
             }
             place={
             <>CASA DO SEREIO<br/>
@@ -52,7 +52,7 @@ const secondSection =
 const thirdSection =
             <Section
             title={
-            <>CONVERSAS ABERTAS</>
+            <><u>CONVERSAS ABERTAS</u></>
             }
             place={
             <>CHÃO SLZ<br/>
@@ -72,7 +72,7 @@ const thirdSection =
 const fourthSection =
             <Section
             title={
-            <>SP-ARTE ROTAS BRASILEIRAS</>
+            <><u>SP-ARTE ROTAS BRASILEIRAS</u></>
             }
             place={
             <>ARCA<br/>
