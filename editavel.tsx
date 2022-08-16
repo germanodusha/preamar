@@ -9,7 +9,8 @@ const firstSection =
             }
             place={
             <>
-                CHÃO SLZ (@CHAOSLZ)/LIMA GALERIA (@LIMAGALERIA)<br/>
+                CHÃO SLZ<br/>
+                LIMA GALERIA<br/>
                 SÃO LUIS, 26 ABRIL A 15 MAIO DE 2022
             </>
             }
@@ -32,7 +33,7 @@ const secondSection =
             <>PROCESSOS FORMATIVOS</>
             }
             place={
-            <>CASA DO SEREIO (@CASADOSEREIO)<br/>
+            <>CASA DO SEREIO<br/>
             ALCÂNTRA, MARÇO E ABRIL DE 2022
             </>
             }
@@ -52,7 +53,8 @@ const thirdSection =
             <>CONVERSAS ABERTAS</>
             }
             place={
-            <>CHÃO SLZ (@CHAOSLZ)/LIMA GALERIA (@LIMAGALERIA)<br/>
+            <>CHÃO SLZ<br/>
+            LIMA GALERIA<br/>
             SÃO LUIS, 27 E 28 DE ABRIL DE 2022
             </>
             }
