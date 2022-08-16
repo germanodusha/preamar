@@ -11,7 +11,8 @@ const firstSection =
             <>
                 CHÃO SLZ<br/>
                 LIMA GALERIA<br/>
-                SÃO LUIS, 26 ABRIL A 15 MAIO DE 2022
+                SÃO LUIS<br/>
+                26.ABR-15.MAI/2022
             </>
             }
             description={
@@ -34,7 +35,8 @@ const secondSection =
             }
             place={
             <>CASA DO SEREIO<br/>
-            ALCÂNTRA, MARÇO E ABRIL DE 2022
+            ALCÂNTRA<br/>
+            MAR-ABR/2022
             </>
             }
             description={
@@ -55,8 +57,10 @@ const thirdSection =
             place={
             <>CHÃO SLZ<br/>
             LIMA GALERIA<br/>
-            SÃO LUIS, 27 E 28 DE ABRIL DE 2022
-            </>
+            <\>
+            SÃO LUIS<br/>
+            27-28.ABR/2022
+            
             }
             description={
                 <>
@@ -72,7 +76,8 @@ const fourthSection =
             }
             place={
             <>ARCA<br/>
-            SÃO PAULO, 24 A 28 DE AGOSTO 
+            SÃO PAULO<br/>
+            24-28/AGO 
             </>
             }
             description={
