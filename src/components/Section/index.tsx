@@ -1,5 +1,4 @@
-import { ReactElement, ReactNode } from "react";
-
+import { ReactNode } from "react";
 
 interface SectionProps {
     title: ReactNode;
@@ -18,12 +17,21 @@ export const Section = ({title, place, description}:SectionProps) =>{
             .container {
                 line-break: auto;
                 word-wrap: break-word;
+                width: 100%;
+            }
+            .wrapper {
+                display:grid;
+                width: 100%;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-auto-flow: row;
+                color:white;
+                gap:5rem;
             }
             h3{
                 font-weight:400;
             }
             h3:first-child {
-                color:black;
+                color:white;
             }
             h3:last-child{
                 margin:1rem 0px;

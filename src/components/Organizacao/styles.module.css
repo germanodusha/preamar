@@ -3,12 +3,13 @@
     grid-template-columns: 1fr 1fr;
     background-color: rgb(var(--yellow-first));
     padding: 0px 1rem;
-    padding-top: 1rem;
-    padding-bottom:4rem;
+    padding-top: 5rem;
+    padding-bottom:5rem;
     max-height: 50%;
     color: black;
     font-weight: 400;
     z-index: 0;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
 }

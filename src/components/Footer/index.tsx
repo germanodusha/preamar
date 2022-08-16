@@ -18,32 +18,17 @@ const Footer = () =>{
         <div ref={containerRef} className={styles.container}>
                 <h3 className={styles.title}>AÇÕES REALIZADAS</h3>
                 <div className={styles.grid}>
-                    <div className={styles.infoGrid}>
-                        {final.map(
-                            (section, index) => {
-                                return(
-                                    <div key={index}>
-                                        <Scroller  parentoffset={parentofsetTop * 1.05}>
-                                            {section}
-                                        </Scroller>
-                                    </div>
-                                )
-                            }
-                            )}
-                    </div>
-                    <div>
-                            <div className={styles.cover}>
-                                
-                                    <img src="/Preamar_Logo2.png" />
-                                
-                                
-                                    <img src="/Preamar_Logo2.png"/>
-                                
-                                
-                                    <img src="/Preamar_Logo2.png" />
-                                
-                            </div>
-                    </div>
+                    {final.map(
+                        (section, index) => {
+                            return(
+                                <div key={index}>
+                                    <Scroller  parentoffset={parentofsetTop * 1.05}>
+                                        {section}
+                                    </Scroller>
+                                </div>
+                            )
+                        }
+                    )}
                 </div>
         </div>
     )
