@@ -55,11 +55,13 @@ const thirdSection =
             <><u>CONVERSAS ABERTAS</u></>
             }
             place={
-            <>CHÃO SLZ<br/>
+            <>
+            <div>CHÃO SLZ<br/>
             LIMA GALERIA<br/>
-            <\>
+            </div>
             SÃO LUIS<br/>
             27-28.ABR/2022
+            </>
             
             }
             description={

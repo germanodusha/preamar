@@ -10,7 +10,7 @@ export const Section = ({title, place, description}:SectionProps) =>{
         <div className="container">
             <div className="wrapper">
                 <h3>{title}</h3>
-                <h3>{place}</h3>
+                <h3 className="place">{place}</h3>
                 <h3>{description}</h3>
             </div>
             <style jsx>{`
@@ -30,6 +30,10 @@ export const Section = ({title, place, description}:SectionProps) =>{
                 grid-auto-flow: row;
                 color:white;
                 gap:5rem;
+            }
+            .place {
+                display:grid;
+                gap:1rem;
             }
             h3{
                 font-weight:400;
