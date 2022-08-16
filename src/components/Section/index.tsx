@@ -18,6 +18,10 @@ export const Section = ({title, place, description}:SectionProps) =>{
                 line-break: auto;
                 word-wrap: break-word;
                 width: 100%;
+                margin-bottom:2rem;
+            }
+            .container:global(b){
+                color:rgba(255, 255, 255, 0.6);
             }
             .wrapper {
                 display:grid;
@@ -32,9 +36,6 @@ export const Section = ({title, place, description}:SectionProps) =>{
             }
             h3:first-child {
                 color:white;
-            }
-            h3:last-child{
-                margin:1rem 0px;
             }
             `}</style>
         </div>
