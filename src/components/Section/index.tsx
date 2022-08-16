@@ -18,7 +18,7 @@ export const Section = ({title, place, description}:SectionProps) =>{
                 line-break: auto;
                 word-wrap: break-word;
                 width: 100%;
-                margin-bottom:2rem;
+                margin-bottom:4rem;
             }
             .container:global(b){
                 color:rgba(255, 255, 255, 0.6);
