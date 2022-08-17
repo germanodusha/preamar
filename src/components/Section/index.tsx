@@ -48,7 +48,7 @@ export const Section = ({title, place, description}:SectionProps) =>{
                 display:grid;
                 width: 100%;
                 grid-template-columns: 1fr;
-                gap:3rem;
+                gap:1.5rem;
             }
             }
             `}</style>
