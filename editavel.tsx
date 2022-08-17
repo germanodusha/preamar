@@ -38,7 +38,7 @@ const secondSection =
             <>
             <div>CASA DO SEREIO<br/>
             </div>
-            ALCÂNTRA<br/>
+            ALCÂNTARA<br/>
             MAR-ABR/2022
             </>
             }
