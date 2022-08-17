@@ -22,21 +22,21 @@ const Slider = ({fileNames}:SliderProps) => {
         }
         setCurrentSlide(0)
     },[currentSlide, fileNames])
-
+    const {length} = fileNames;
     return(
         <div className={`${styles.container} containerModal`}>
             <div className={styles.gradient}/>
             <div className={`wrapper`}>
                 {fileNames.map((fileName, index) => {
                         return(
-                            <div onClick={()=>{setModal({imgUrl:`/corousel-photos/${fileName}`, isOpen:true})}} key={index} className={styles.cover}>
+                            <div onClick={()=>{setModal({imgUrl:`/corousel-photos/${fileName}`, isOpen:true})}} key={index} className={`${styles.cover} ${index===currentSlide?"fadeIn":null}`}>
                                 <Image src={`/corousel-photos/${fileName}`} objectFit="cover" alt='image' layout="fill"/>
                             </div>
                         )}
                 )}
             </div>
-            <div className={styles.leftArrow} onClick={()=>{click(-1)}}/>
-            <div className={styles.rightArrow} onClick={()=>{click(1)}}/>
+            <div className={`${styles.leftArrow} ${currentSlide===length-1?"overlay":null}`} onClick={()=>{click(-1)}}/>
+            <div className={`${styles.rightArrow} ${currentSlide===0?"overlay":''}`} onClick={()=>{click(1)}}/>
             <style jsx>{`
             .wrapper {
                 transform: translateX(${currentSlide * -100}%);
@@ -44,6 +44,21 @@ const Slider = ({fileNames}:SliderProps) => {
                 height: 100%;
                 display: grid;
                 grid-template-columns: repeat(${fileNames.length}, 100%);
+            }
+            .overlay {
+                z-index:100000000;
+                width:100%;
+            }
+            .fadeIn {
+                animation: fadeIn 3s ease-in-out;
+            }
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity:1;
+                }
             }
             `}</style>
         </div>

@@ -29,11 +29,13 @@ export const Section = ({title, place, description}:SectionProps) =>{
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-auto-flow: row;
                 color:white;
-                gap:5rem;
             }
             .place {
-                display:grid;
-                gap:1rem;
+                display:flex;
+                flex-direction:column;
+            }
+            .place > :global(div) {
+                margin-bottom:1rem;
             }
             h3{
                 font-weight:400;
