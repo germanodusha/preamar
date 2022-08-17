@@ -12,7 +12,7 @@ const firstSection =
                 <div>CHÃO SLZ<br/>
                 LIMA GALERIA<br/>
                 </div>
-                SÃO LUIS<br/>
+                SÃO LUÍS<br/>
                 26.ABR-15.MAI/2022
             </>
             }
@@ -62,7 +62,7 @@ const thirdSection =
             <div>CHÃO SLZ<br/>
             LIMA GALERIA<br/>
             </div>
-            SÃO LUIS<br/>
+            SÃO LUÍS<br/>
             27-28.ABR/2022
             </>
             
@@ -91,7 +91,7 @@ const fourthSection =
             description={
              <>
                 <i>ARTISTAS</i><br/>
-            SILVANA MENDES, DINHO ARAÚJO, MARCIO VASCONCELOS
+            SILVANA MENDES, DINHO ARAÚJO, MÁRCIO VASCONCELOS
             <br/>
                 <i>CURADORIA</i><br/>
                 SAMANTHA MOREIRA, FREDERICO SILVA, YURI LOGRADO, MARCO LIMA, GERMANO DUSHÁ
