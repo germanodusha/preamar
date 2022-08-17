@@ -7,7 +7,6 @@
     color: black;
     z-index: 0;
     padding-bottom: 2rem;
-    padding-top: 30rem;
 }
 
 .container::after {
