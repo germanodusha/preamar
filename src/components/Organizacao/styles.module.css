@@ -5,13 +5,13 @@
     padding: 0px 1rem;
     padding-top: 15rem;
     padding-bottom:5rem;
-    max-height: 50%;
     color: black;
     font-weight: 400;
     z-index: 0;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    height: auto;
 }
 .parent {
     display: grid;

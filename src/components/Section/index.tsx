@@ -43,6 +43,13 @@ export const Section = ({title, place, description}:SectionProps) =>{
             h3:first-child {
                 color:white;
             }
+            @media(max-width:768px){
+                .wrapper {
+                display:grid;
+                width: 100%;
+                grid-template-columns: 1fr;
+            }
+            }
             `}</style>
         </div>
     )
