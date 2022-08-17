@@ -23,7 +23,7 @@ const Landing = ()=>{
                 <span className={scrolled ?'is-visible':'is-not-visible'}>PREAMAR é um projeto de ações em rede a partir do Maranhão</span>
                 <div className={styles.linkContainer}>
                     <a className={scrolled ?'is-visible':'is-not-visible'} target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/preamaremrede'>Instagram</a>
-                    <a className={scrolled ?'is-visible':'is-not-visible'} target="_blank" rel="noopener noreferrer" href='https://www.youtube.com/channel/preamaremrede'>YouTube</a>
+                    <a className={scrolled ?'is-visible':'is-not-visible'} target="_blank" rel="noopener noreferrer" href='https://www.youtube.com/channel/UCdwYhxP7aHKuNux01eaUjnA'>YouTube</a>
                 </div>
             </footer>
         </div>
