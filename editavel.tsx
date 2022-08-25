@@ -95,6 +95,9 @@ const fourthSection =
             <br/>
                 <i>CURADORIA</i><br/>
                 SAMANTHA MOREIRA, FREDERICO SILVA, YURI LOGRADO, MARCO LIMA, GERMANO DUSHÁ
+            <br/>
+                <i>EXPOGRAFIA</i><br/>
+                ALBERTO RHEINGANTZ       
                 </>
             }/>   
       
