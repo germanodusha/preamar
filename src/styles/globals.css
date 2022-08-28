@@ -16,13 +16,16 @@ a {
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  cursor: url('/Preamar_Cursor.cur'), auto;
   font-weight: 400 !important;
-
 }
 *::selection{
   background: rgba(var(--green-first), 1);
   color: white;
+}
+html,
+body,
+a {
+    cursor: url('/Preamar_Cursor.cur'), auto;
 }
 .description-container{
   position:relative;
